@@ -7,7 +7,7 @@ import node from "../assets/node.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import bootstrap from '../assets/bootstrap.png'
-import mongodb from '../assets/mongodb.png'
+import mongo from '../assets/mongo.png'
 
 const Skills = () => {
 
@@ -65,7 +65,7 @@ const Skills = () => {
    
     {
       id:9,
-      src:mongodb,
+      src:mongo,
       title:"Mongo DB",
       style:'shadow-green-500'
     },

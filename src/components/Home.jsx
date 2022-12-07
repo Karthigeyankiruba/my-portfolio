@@ -1,17 +1,18 @@
 import React from "react";
-import Profile from "../assets/portfolio/profile.png";
+import Profile from "../assets/portfolio/profile3.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import {Link} from 'react-scroll'
 
 
 const Home = () => {
   let style = {
-    backgroundColor: "royalblue",
+   
+   backgroundColor : "royalblue"
   };
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 text-white"
+      className="h-screen  w-full bg-gradient-to-b from-black via-black to-gray-800 text-white"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
