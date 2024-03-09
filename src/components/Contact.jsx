@@ -19,7 +19,7 @@ const Contact = () => {
       id: 2,
       child: (
         <>
-           <FaGithub size={30} />
+          <FaGithub size={30} />
         </>
       ),
       href: "https://github.com/Karthigeyankiruba",
@@ -28,7 +28,7 @@ const Contact = () => {
       id: 3,
       child: (
         <>
-           <HiOutlineMail size={30} />
+          <HiOutlineMail size={30} />
         </>
       ),
       href: "mailto:karthigeyan0901@gmail.com",
@@ -37,10 +37,10 @@ const Contact = () => {
       id: 4,
       child: (
         <>
-           <BsFillPersonLinesFill size={30} />
+          <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/resume.pdf",
+      href: "/karthigeyan_resume.pdf",
       style: "rounded-br-md",
       download: true,
     },
@@ -51,7 +51,7 @@ const Contact = () => {
       name="contact"
       className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+      <div className="flex flex-col p-4 justify-center max-w-screen-xl mx-auto h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
@@ -91,28 +91,23 @@ const Contact = () => {
         </div>
 
         <footer class="text-center">
-  <div class="container px-6 pt-6">
-    <div class="flex justify-center mb-6 ">
-    {links.map(({ id, child, href, style, download }) => (
-                      
-                          <a key={id}
-                            href={href}
-                            className="flex flex-row justify-center items-center w-full text-gray-500 hover:scale-110 hover:text-white duration-200"
-                            download={download}
-                            target="_blank"
-                            rel="noreferrer"
-                            
-                          >
-                            {child}
-                          </a>
-                       
-                      ))}
-</div>
-</div>
-      </footer>  
-            
-               
-                
+          <div class="container px-6 pt-6">
+            <div class="flex justify-center mb-6 ">
+              {links.map(({ id, child, href, style, download }) => (
+                <a
+                  key={id}
+                  href={href}
+                  className="flex flex-row justify-center items-center w-full text-gray-500 hover:scale-110 hover:text-white duration-200"
+                  download={download}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {child}
+                </a>
+              ))}
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
