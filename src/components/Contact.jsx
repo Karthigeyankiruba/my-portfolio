@@ -69,19 +69,19 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-3 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
             <input
               type="text"
               name="email"
               placeholder="Enter your email"
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="my-4 p-3 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
             <textarea
               name="message"
               rows="10"
               placeholder="Enter your message"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-3 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
 
             <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
@@ -90,7 +90,7 @@ const Contact = () => {
           </form>
         </div>
 
-        <footer class="text-center">
+        <footer class="text-center lg:hidden">
           <div class="container px-6 pt-6">
             <div class="flex justify-center mb-6 ">
               {links.map(({ id, child, href, style, download }) => (

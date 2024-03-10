@@ -1,46 +1,49 @@
 import React from "react";
 
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import weatherApp from "../assets/portfolio/weather.png";
+import fizziCook from "../assets/portfolio/fizziecook.png";
+import uchef from "../assets/portfolio/uchef.png";
+import dapplLanding from "../assets/portfolio/dappllanding.png";
+import board from "../assets/portfolio/board-dashbord.png";
+import bitcot from "../assets/portfolio/bitcot.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
-      demo: "https://stellar-lamington-8dffc7.netlify.app/",
-      code: "https://github.com/Karthigeyankiruba/Movie-List",
+      src: weatherApp,
+      demo: "https://peaceful-vacherin-455fb2.netlify.app/",
+      code: "https://github.com/Karthigeyankiruba/weather-app",
     },
     {
       id: 2,
-      src: reactParallax,
-      demo: "https://extraordinary-madeleine-1a824a.netlify.app/",
-      code: "",
+      src: fizziCook,
+      demo: "https://legendary-rugelach-da590a.netlify.app/",
+      code: "https://github.com/Karthigeyankiruba/react-recipe-app",
     },
     {
       id: 3,
-      src: reactWeather,
-      demo: "https://fantastic-cassata-7e5956.netlify.app/",
-      code: "https://github.com/Karthigeyankiruba/Day19-Tsk-1",
+      src: uchef,
+      demo: "https://amazing-buttercream-79511e.netlify.app/",
+      code: "https://github.com/Karthigeyankiruba/recipe-app-v2",
     },
     {
       id: 4,
-      src: arrayDestruct,
-      demo: "",
-      code: "",
+      src: dapplLanding,
+      demo: "https://ephemeral-blancmange-2dba0b.netlify.app/",
+      code: "https://github.com/Karthigeyankiruba/dappl-project",
     },
     {
       id: 5,
-      src: reactParallax,
-      demo: "",
-      code: "",
+      src: board,
+      demo: "https://ornate-mooncake-9ae007.netlify.app/",
+      code: "https://github.com/Karthigeyankiruba/listed-dashboard",
     },
     {
       id: 6,
-      src: reactWeather,
-      demo: "",
-      code: "",
+      src: bitcot,
+      demo: "https://lighthearted-frangipane-d46a96.netlify.app/",
+      code: "https://github.com/Karthigeyankiruba/bitcot-task",
     },
   ];
 
@@ -64,6 +67,11 @@ const Portfolio = () => {
               <img
                 src={src}
                 alt=""
+                style={{
+                  objectFit: "cover",
+                  maxHeight: 200,
+                  width: "100%",
+                }}
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
