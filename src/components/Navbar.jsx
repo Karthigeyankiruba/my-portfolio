@@ -70,8 +70,8 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {nav && (
           <motion.ul
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
             className="md:hidden flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-300"
           >
             {links.map(({ link, id }) => (
@@ -80,7 +80,7 @@ const Navbar = () => {
                   to={link}
                   smooth
                   duration={500}
-                  offset={-70}
+                  // offset={-70}
                   onClick={() => setNav(false)}
                 >
                   {link}

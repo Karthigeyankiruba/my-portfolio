@@ -42,7 +42,7 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
         >
           <h2 className="text-4xl font-bold inline border-b-4 border-cyan-500">
             Projects
@@ -57,7 +57,7 @@ const Projects = () => {
                 key={id}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: id * 0.1 }}
+                transition={{ duration: 0.2 }}
                 className="bg-white/5 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300"
               >
                 <h3 className="text-xl font-semibold mb-2 text-cyan-400">
