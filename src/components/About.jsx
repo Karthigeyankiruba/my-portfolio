@@ -26,16 +26,16 @@ const About = () => {
         >
           <p className="text-xl mt-4 text-gray-300 leading-relaxed">
             I'm a frontend developer with 2 years of experience, currently
-            working at ABC, a cybersecurity product company. I specialize in
-            building clean, performant, and intuitive interfaces using React and
-            Tailwind CSS.
+            working at Unosecur, a cybersecurity product company. I specialize
+            in building clean, performant, and intuitive interfaces using React
+            and Tailwind CSS.
           </p>
           <p className="text-xl mt-4 text-gray-300 leading-relaxed">
-            At ABC, I’ve contributed to developing and architecting large-scale
-            features like National Health ID-based Identity Providers (NHI IDP)
-            and IAM Analyzers. I take ownership of frontend architecture,
-            component design, and user experience — while collaborating closely
-            with backend and product teams.
+            At Unosecur, I’ve contributed to developing and architecting
+            large-scale features like National Health ID-based Identity
+            Providers (NHI IDP) and IAM Analyzers. I take ownership of frontend
+            architecture, component design, and user experience — while
+            collaborating closely with backend and product teams.
           </p>
           <p className="text-xl mt-4 text-gray-300 leading-relaxed">
             I'm constantly exploring better ways to write scalable frontend code

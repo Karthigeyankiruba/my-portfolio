@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    company: "ABC (Cybersecurity/Cloud Security)",
+    company: "Unosecur (Cybersecurity/Cloud Security)",
     role: "Frontend Developer",
     period: "2023 - Present",
     points: [

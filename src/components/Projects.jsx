@@ -8,7 +8,7 @@ const Projects = () => {
       id: 1,
       title: "IAM Analyzer",
       description:
-        "A powerful tool developed at ABC for analyzing identity access configurations in cloud platforms.",
+        "A powerful tool developed at Unosecur for analyzing identity access configurations in cloud platforms.",
       tech: ["React", "Tailwind", "Framer Motion"],
       codeLink: "https://github.com/your-iam-analyzer",
       liveLink: "",
