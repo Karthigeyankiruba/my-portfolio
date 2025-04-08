@@ -2,72 +2,62 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { motion } from "framer-motion";
+
+const links = [
+  {
+    id: 1,
+    label: "LinkedIn",
+    icon: <FaLinkedin size={20} />,
+    href: "https://www.linkedin.com/in/karthigeyan-k-53116a19a/",
+    style: "rounded-tr-md",
+  },
+  {
+    id: 2,
+    label: "GitHub",
+    icon: <FaGithub size={20} />,
+    href: "https://github.com/Karthigeyankiruba",
+  },
+  {
+    id: 3,
+    label: "Email",
+    icon: <HiOutlineMail size={20} />,
+    href: "mailto:karthigeyan0901@gmail.com",
+  },
+  {
+    id: 4,
+    label: "Resume",
+    icon: <BsFillPersonLinesFill size={20} />,
+    href: "Karthigeyan-resume.pdf",
+    style: "rounded-br-md",
+    download: true,
+  },
+];
 
 const SocialLinks = () => {
-  const links = [
-    {
-      id: 1,
-      child: (
-        <>
-          LinkedIn <FaLinkedin size={30} />
-        </>
-      ),
-      href: "https://www.linkedin.com/in/karthigeyan-k-53116a19a/",
-      style: "rounded-tr-md",
-    },
-    {
-      id: 2,
-      child: (
-        <>
-          GitHub <FaGithub size={30} />
-        </>
-      ),
-      href: "https://github.com/Karthigeyankiruba",
-    },
-    {
-      id: 3,
-      child: (
-        <>
-          Mail <HiOutlineMail size={30} />
-        </>
-      ),
-      href: "mailto:karthigeyan0901@gmail.com",
-    },
-    {
-      id: 4,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      href: "/karthigeyan_resume.pdf",
-      style: "rounded-br-md",
-      download: true,
-    },
-  ];
-
   return (
-    <div className="hidden xl:flex flex-col top-[35%] left-0 fixed">
+    <div className="hidden xl:flex flex-col fixed top-[35%] left-0 z-50">
       <ul>
-        {links.map(({ id, child, href, style, download }) => (
-          <li
+        {links.map(({ id, label, icon, href, style, download }) => (
+          <motion.li
             key={id}
-            className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
-              " " +
-              style
-            }
+            initial={{ x: -120 }}
+            animate={{ x: -10 }}
+            whileHover={{ x: 0 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className={`flex items-center justify-between w-44 h-12 px-4 ml-[-100px] bg-gray-800 bg-opacity-70 text-white hover:bg-cyan-600 hover:text-white rounded-md duration-300 cursor-pointer mb-2 shadow-md ${style}`}
           >
             <a
               href={href}
-              className="flex justify-between items-center w-full text-white"
+              className="flex items-center justify-between w-full"
               download={download}
               target="_blank"
               rel="noreferrer"
             >
-              {child}
+              <span className="font-medium">{label}</span>
+              {icon}
             </a>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </div>

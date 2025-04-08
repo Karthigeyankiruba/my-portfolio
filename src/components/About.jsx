@@ -1,56 +1,48 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white py-16"
     >
-      <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            About
-          </p>
-        </div>
-        <div className="text-zinc-300">
-          <p className="text-xl mt-10">
-            Greetings! I'm Karthigeyan, a dedicated Frontend Developer with a
-            year of hands-on experience. My specialization includes crafting
-            seamless user interfaces using technologies such as ReactJS, NextJS,
-            Material UI, Bootstrap, Tailwind CSS, Redux, and other related
-            libraries.
-          </p>
+      <div className="max-w-screen-lg mx-auto px-4 flex flex-col justify-center h-full">
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-4xl font-bold border-b-4 border-cyan-500 inline mb-6">
+            About Me
+          </h2>
+        </motion.div>
 
-          <br />
-
-          <p className="text-xl">
-            In my professional journey, I've been actively involved in
-            developing UI solutions for diverse SaaS products. I thrive in
-            solving complex problems and have successfully contributed to
-            projects dealing with significant challenges, including the
-            integration of complex and big data sets into user interfaces.
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+          className="mt-6 text-lg text-gray-300 leading-relaxed"
+        >
+          <p className="text-xl mt-4 text-gray-300 leading-relaxed">
+            I'm a frontend developer with 2 years of experience, currently
+            working at ABC, a cybersecurity product company. I specialize in
+            building clean, performant, and intuitive interfaces using React and
+            Tailwind CSS.
           </p>
-          <br />
-          <p className="text-xl">
-            My approach involves not just creating visually impressive
-            interfaces but ensuring seamless integration with Restful APIs. I
-            take pride in my ability to deliver interactive and user-centric
-            designs.
+          <p className="text-xl mt-4 text-gray-300 leading-relaxed">
+            At ABC, I’ve contributed to developing and architecting large-scale
+            features like National Health ID-based Identity Providers (NHI IDP)
+            and IAM Analyzers. I take ownership of frontend architecture,
+            component design, and user experience — while collaborating closely
+            with backend and product teams.
           </p>
-          <br />
-          <p className="text-xl">
-            I am honored to have been recognized with the Employee of the Month
-            award for my dedication and hard work on projects. Now, I am
-            actively seeking new career opportunities that will not only propel
-            my professional growth but also allow me to enhance my skills
-            further.
+          <p className="text-xl mt-4 text-gray-300 leading-relaxed">
+            I'm constantly exploring better ways to write scalable frontend code
+            and refine UI interactions with a focus on accessibility,
+            performance, and smooth animations.
           </p>
-          <br />
-          <p className="text-xl">
-            Let's collaborate on innovative projects and create impactful user
-            experiences together!
-          </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
