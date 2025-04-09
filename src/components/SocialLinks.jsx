@@ -28,7 +28,7 @@ const links = [
     id: 4,
     label: "Resume",
     icon: <BsFillPersonLinesFill size={20} />,
-    href: "Karthigeyan-resume.pdf",
+    href: "Karthigeyan_resume.pdf",
     style: "rounded-br-md",
     download: true,
   },
